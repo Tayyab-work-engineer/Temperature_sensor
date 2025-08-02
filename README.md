@@ -2,7 +2,7 @@
 
 > “Control is just this question: *How do I change something so that it behaves the way I want?”*
 
-This project simulates the behavior of a temperature control system using a **PID controller**. It models how a physical system — in this case, a temperature sensor — reacts to heating and ambient cooling over time.
+This project simulates the behaviour of a temperature control system using a **PID controller**. It models how a physical system — in this case, a temperature sensing heater — reacts to changes and adjusts itself to meet the desired temperature.
 
 ---
 
@@ -18,11 +18,13 @@ This project models that lag using a simplified temperature simulation and a PID
 
 ---
 
-## 📈 System Behavior
+## 📈 System Behaviour
 
-- **Current Temperature**: 34°C (initial)
+- **Current Temperature**: 5-10°C (Temperature of the office in the morning)
 - **Heater Power**: +2°C every 3 seconds
 - **AC Power **: -2°C every 3 seconds
+- **Temperature Change**: From morning to evening temperature increases, however from evening to night, temperature starts dropping. Temperature varies
+throughout the day, depending on the amount of people, windows left open and other situations that will vary the temperature.
 - **Temperature Update Rule**:
 Temp = Temp + (Heater Power - AC Power) * dt
 
